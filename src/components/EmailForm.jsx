@@ -12,7 +12,7 @@ const EmailForm = () => {
             </div>
             <label htmlFor="message" className='text-white text-lg flex flex-col font-[quicksand] font-medium w-10/12'>
                 Mensagem
-                <textarea name="" id="" className='p-4 mt-2 font-light border-2 border-white outline-0 rounded-3xl pb-14 indent-2' />
+                <textarea name="" id="" className='w-10/12 p-4 mt-2 font-light border-2 border-white outline-0 rounded-3xl pb-14 indent-2' />
             </label>
             <button className='p-3 font-[quicksand] font-bold text-[#BF7269] bg-white rounded-3xl w-2/3' type="submit">
                 Enviar
