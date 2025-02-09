@@ -32,7 +32,7 @@ const PosGraduationCard = () => {
     };
 
     return (
-        <div className='bg-[#F6B0AF] h-56 gap-3 py-5 rounded-lg flex items-center mt-10 justify-center mx-5 relative '>
+        <div className='bg-[#F6B0AF] h-56 gap-3 px-5 py-5 rounded-lg flex items-center mt-10 justify-center mx-5 relative '>
             <button className='p-1 border-2 border-white rounded-full cursor-pointer' onClick={handlePrevCurso}>
                 <FaArrowLeft className='text-white' size={15} />
             </button>
