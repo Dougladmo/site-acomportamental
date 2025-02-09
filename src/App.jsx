@@ -1,8 +1,8 @@
 import React from 'react'
 import Header from './components/layout/header'
+import Footer from './components/layout/Footer'
 
 import { Outlet } from 'react-router-dom'
-import Home from './pages/Home/Home'
 
 const App = () => {
 
@@ -10,6 +10,7 @@ const App = () => {
     <div>
       <Header />
       <Outlet />
+      <Footer />
     </div>
   )
 }

@@ -26,7 +26,7 @@ const CoursesCard = () => {
                                 animate={{ height: "auto", opacity: 1 }}
                                 exit={{ height: 0, opacity: 1 }}
                                 transition={{ duration: 0.5, ease: 'easeInOut' }}
-                                className={`text-xs ${course.bgColor}/50 font-[quicksand] overflow-hidden`}
+                                className={`text-sm ${course.bgColor}/50 font-[quicksand] overflow-hidden ${openIndex == index && index === courses.length - 1 ? 'rounded-b-xl' : ''} `}
                             >
                                 <div className='px-12 py-6 '>
                                     <p className='text-justify'>
@@ -36,7 +36,7 @@ const CoursesCard = () => {
                                         <span><span className='font-bold'>Carga Horária:</span> {course.hours} </span>
                                         <span><span className='font-bold'>Ministrante:</span> {course.instructor} </span>
                                     </p>
-                                    <p className='text-sm font-bold'>Investimento: {course.investment}</p>
+                                    <p className='text-base font-bold'>Investimento: {course.investment}</p>
                                 </div>
                             </motion.div>
                         )}
