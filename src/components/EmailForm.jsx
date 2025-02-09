@@ -3,7 +3,7 @@ import InputForm from './InputForm'
 
 const EmailForm = () => {
     return (
-        <form className='bg-[#BF7269] flex flex-col gap-5 p-10 rounded-3xl'>
+        <form className='bg-[#BF7269] flex flex-col px-5 gap-5 p-10 rounded-3xl'>
             <div className='flex gap-5'>
                 <InputForm type='text' name='Nome' placeholder='Seu nome' />
                 <InputForm type='tel' name='Telefone' placeholder='Insira seu telefone' />
