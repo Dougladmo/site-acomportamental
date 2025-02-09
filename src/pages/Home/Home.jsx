@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PosGraduationCard from '../../components/posGraduationCard';
+import PosGraduationCard from '../../components/PosGraduationCard';
 import CoursesCard from '../../components/CoursesCard/CoursesCard';
 
 const Home = () => {
