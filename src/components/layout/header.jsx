@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className='bg-[#BF7269] fixed top-0 z-10 w-full px-8 py-5 h-16 flex items-center justify-between p-4'>
+    <header className='bg-[#BF7269] w-screen fixed top-0 z-10 px-8 py-5 h-16 flex items-center justify-between p-4'>
       <img src="/logo-header.png" alt="header logo" className='w-12' />
       <IoIosMenu
         className='text-white cursor-pointer'

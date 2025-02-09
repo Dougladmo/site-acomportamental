@@ -40,7 +40,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div id="cursos" className='w-full mt-32'>
+      <div id="cursos" className='w-full mt-42'>
         <CoursesCard />
       </div>
       <div id='pos-graduacao' >
