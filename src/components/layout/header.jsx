@@ -17,7 +17,7 @@ const Header = () => {
         size={35}
         onClick={toggleOffcanvas}
       />
-      <Offcanvas isOffcanvasVisible={isOffcanvasVisible} toggleOffcanvas={() => setIsOffcanvasVisible()} />
+      <Offcanvas isOffcanvasVisible={isOffcanvasVisible} toggleOffcanvas={() => setIsOffcanvasVisible(!isOffcanvasVisible)} />
     </header>
   );
 };

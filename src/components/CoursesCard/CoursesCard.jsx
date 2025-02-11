@@ -26,7 +26,7 @@ const CoursesCard = () => {
                                 animate={{ height: "auto", opacity: 1 }}
                                 exit={{ height: 0, opacity: 1 }}
                                 transition={{ duration: 0.5, ease: 'easeInOut' }}
-                                className={`text-sm ${course.bgColor}/50 font-[quicksand] overflow-hidden ${openIndex == index && index === courses.length - 1 ? 'rounded-b-xl' : ''} `}
+                                className={`text-sm ${course.innerBgColor} font-[quicksand] overflow-hidden ${openIndex == index && index === courses.length - 1 ? 'rounded-b-xl' : ''} `}
                             >
                                 <div className='px-12 py-6 '>
                                     <p className='text-justify'>

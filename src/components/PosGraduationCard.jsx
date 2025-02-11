@@ -33,8 +33,8 @@ const PosGraduationCard = () => {
 
     return (
         <div className='bg-[#F6B0AF] h-56 gap-3 px-5 py-5 rounded-lg flex items-center mt-10 justify-center mx-5 relative '>
-            <button className='p-1 border-2 border-white rounded-full cursor-pointer' onClick={handlePrevCurso}>
-                <FaArrowLeft className='text-white' size={15} />
+            <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handlePrevCurso}>
+                <FaArrowLeft size={15} />
             </button>
             <div className='flex flex-col items-center justify-center h-full overflow-hidden pt-7 w-72'>
                 <img src="/censupeg.png" alt="logo censupeg" className='absolute top-3 w-18' />
@@ -56,8 +56,8 @@ const PosGraduationCard = () => {
                     </motion.div>
                 </AnimatePresence>
             </div>
-            <button className='p-1 border-2 border-white rounded-full cursor-pointer' onClick={handleNextCurso}>
-                <FaArrowRight className='text-white' size={15} />
+            <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handleNextCurso}>
+                <FaArrowRight size={15} />
             </button>
         </div>
     );

@@ -1,16 +1,23 @@
 import React from 'react'
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
-const FooterLink = ({ link, title }) => {
+const FooterLink = ({ link, title, offset }) => {
     return (
         <motion.div
             className='relative inline-block'
             whileHover="hover"
             initial="initial"
         >
-            <a href={link} target='_blank' className='relative pr-1 text-base'>
+            <Link
+                className='relative pr-1 text-base'
+                to={link}
+                smooth={true}
+                offset={offset}
+                duration={500}
+            >
                 <span>{title}</span>
-            </a>
+            </Link>
             <motion.div
                 className='absolute bottom-0 left-0 h-[2px] bg-[#BF7269]'
                 variants={{

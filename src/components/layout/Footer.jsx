@@ -19,27 +19,27 @@ const Footerr = () => {
           </a>
           <ul className='flex flex-col gap-1 pl-1 py-2 font-[quicksand]'>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Home' />
+              <FooterLink offset={0} link='hero' title='Home' />
             </li>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Sobre nós' />
+              <FooterLink offset={-180} link='about-us' title='Sobre nós' />
             </li>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Cursos' />
+              <FooterLink offset={-200} link='cursos' title='Cursos' />
             </li>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Pós-graduação' />
+              <FooterLink offset={-130} link='pos-graduacao' title='Pós-graduação' />
             </li>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Consultas' />
+              <FooterLink offset={-100} link='consultas' title='Consultas' />
             </li>
             <li>
-              <FooterLink link='https://github.com/dougladmo' title='Blog' />
+              <FooterLink offset={-60} link='contact' title='Fale conosco' />
             </li>
           </ul>
         </div>
       </div>
-      <div className='flex flex-col items-center justify-start mt-4'>
+      <div id='contact' className='flex flex-col items-center justify-start mt-4'>
         <p className='my-3 text-xl font-semibold font-[quicksand]'>Entre em contato</p>
         <EmailForm />
       </div>
@@ -71,15 +71,15 @@ const Footerr = () => {
           <MdEmail  className='bg-[#BF7269] text-white p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40}/>
         </div>
         <div className='flex flex-col gap-1 font-[quicksand]'>
-          <div className='flex items-center mb-1 text-sm'>
+          <div className='flex items-center mb-1 text-xs'>
             <a href="#" className='pr-2 border-r'>Políticas de privacidade</a>
             <a href="#" className='pl-2'>Termos de uso</a>
           </div>
-          <p className='mb-1 text-sm'>
+          <p className='mb-1 text-xs'>
             &copy; 2025 Acomportamental. Todos os direitos reservados.
           </p>
-          <div className='flex items-center'>
-            <span>Site desenvolvidor por: </span>
+          <div className='flex items-center gap-1'>
+            <span className='text-sm'>Site desenvolvidor por: </span>
             <img className='w-24' src="/logo-nobuggy.png" alt="logo da nobuggy" />
           </div>
         </div>
