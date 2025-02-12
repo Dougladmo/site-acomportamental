@@ -12,7 +12,7 @@ const Home = () => {
         id="hero"
         className="relative bg-[url('/hero-image.jpg')] bg-cover mt-10 bg-center h-64 flex items-center overflow-hidden md:h-[45vh]"
       >
-        <img src="/logo-acomportamental-hero.png" alt="logo-hero" className='z-[1] w-1/3 ml-8' />
+        <img src="/logo-acomportamental-hero.svg" alt="logo-hero" className='z-[1] w-1/3 ml-8' />
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#f6b0af]/98 to-transparent mt-32"></div>
       </div>
