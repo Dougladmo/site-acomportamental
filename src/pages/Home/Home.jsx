@@ -7,7 +7,7 @@ import AnimatedAbout from '../../components/AnimatedAbout'
 const Home = () => {
 
   return (
-    <main className='text-3xl bg-[#FFF6F2]'>
+    <main className='text-3xl bg-[#FFF6F2]'> 
       <div
         id="hero"
         className="relative bg-[url('/hero-image.jpg')] bg-cover mt-10 bg-center h-64 flex items-center overflow-hidden md:h-[45vh]"
@@ -16,19 +16,19 @@ const Home = () => {
 
         <div className="absolute inset-0 bg-gradient-to-t from-[#f6b0af]/98 to-transparent mt-32"></div>
       </div>
-      <div id="about-us" className="relative h-64 px-5 pt-12">
+      <div id="about-us" className="relative h-64 px-5 pt-12 md:pt-24 md:pr-8">
         <div className="absolute inset-0 h-full bg-gradient-to-b from-[#f6b0af] to-transparent"></div>
         <div className='flex mt-5'>
             <AnimatedAbout />
         </div>
       </div>
-      <div id="cursos" className='w-full mt-42'>
+      <div id="cursos" className='w-full mt-42 md:mt-80'>
         <CoursesCard />
       </div>
       <div id='pos-graduacao' >
         <div className='flex flex-col gap-2 pt-12'>
           <h2 className='text-xl font-[quicksand] font-bold text-[#BF7269] px-5 mb-3'>
-            Pós- graduação
+            Pós-graduação
           </h2>
           <p className='font-[quicksand] text-sm text-justify px-5'>
             Com quase 10 anos de parceria, a ACOMPORTAMENTAL, em colaboração exclusiva com a FACULDADE CENSUPEG, oferece três cursos de pós-graduação <span className='font-bold'>presencial e online</span> para quem busca especialização com qualidade e credibilidade.
