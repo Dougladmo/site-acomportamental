@@ -134,7 +134,7 @@ const Home = () => {
                 Agende sua sessão e inicie sua jornada de autoconhecimento clicando aqui.
               </a>
             </div>
-            <div className='w-1/3 rounded-xl mb-2 gap-5 z-[1] bg-cover bg-[url("/image3.webp")] bg-center'>
+            <div className='w-1/3 rounded-xl mb-2 gap-5 z-[1] bg-cover bg-[url("/image3.webp")] bg-top'>
             </div>
           </div>
         </div>

@@ -8,10 +8,10 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-const Footerr = () => {
+const Footer = () => {
   return (
     <footer className='bg-[#FFF6F2] px-5 pt-10 pb-3 mx-auto max-w-7xl'>
-      <div className='flex flex-col w-full md:flex-row'>
+      <div className='flex flex-col w-full sm:justify-between sm:flex-row'>
         <div className='w-1/2'>
           <a href='#' className='flex flex-col items-start'>
             <img src="/logo-footer.png" alt="logo acomportamental footer" className='w-16' />
@@ -38,14 +38,14 @@ const Footerr = () => {
             </li>
           </ul>
         </div>
-        <div id='contact' className='flex flex-col items-center justify-start mt-4 md:items-end md:mt-0 md:w-full lg:w-1/2'>
+        <div id='contact' className='flex flex-col items-center justify-start w-full mt-4 sm:items-end md:items-end md:mt-0 lg:w-1/2'>
           <div className='flex flex-col items-center'>
             <p className='my-3 md:mt-0 text-xl font-semibold font-[quicksand]'>Entre em contato</p>
             <EmailForm />
           </div>
         </div>
       </div>
-      <div className='flex items-center justify-center w-full gap-5 py-5 md:mt-12 md:mb-5'>
+      <div className='flex items-center justify-between w-full gap-5 py-5 md:mt-12 md:mb-5'>
         <div className='font-[quicksand] text-sm lg:text-lg flex flex-col gap-2 lg:w-1/2 lg:h-full'>
           <p>
             Endereço
@@ -91,4 +91,4 @@ const Footerr = () => {
   )
 }
 
-export default Footerr
+export default Footer
