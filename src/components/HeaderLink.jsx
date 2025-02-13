@@ -2,7 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
-const FooterLink = ({ link, title, offset }) => {
+const HeaderLink = ({ link, title, offset }) => {
     return (
         <motion.div
             className='relative inline-block'
@@ -10,7 +10,7 @@ const FooterLink = ({ link, title, offset }) => {
             initial="initial"
         >
             <Link
-                className='relative pr-1 text-base cursor-pointer md:text-lg'
+                className='relative text-base cursor-pointer'
                 to={link}
                 smooth={true}
                 offset={offset}
@@ -19,7 +19,7 @@ const FooterLink = ({ link, title, offset }) => {
                 <span>{title}</span>
             </Link>
             <motion.div
-                className='absolute bottom-0 left-0 h-[2px] bg-[#BF7269]'
+                className='absolute bottom-0 left-0 h-[2px] bg-[#fff]'
                 variants={{
                     initial: { width: 0 },
                     hover: { width: '100%' },
@@ -30,4 +30,4 @@ const FooterLink = ({ link, title, offset }) => {
     )
 }
 
-export default FooterLink
+export default HeaderLink

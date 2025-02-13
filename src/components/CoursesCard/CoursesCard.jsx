@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { courses } from './Courses'
+import { courses } from './Courses';
 
-const CoursesCard = () => {
+const MobileCoursesCard = () => {
     const [openIndex, setOpenIndex] = useState(null);
 
     const toggleDropdown = (index) => {
@@ -10,34 +10,34 @@ const CoursesCard = () => {
     };
 
     return (
-        <div>
+        <div className='flex w-full'>
             {courses.map((course, index) => (
-                <div key={index}>
+                <div key={index} className={`flex flex-row h-[450px] justify-center transition-all duration-500 ${openIndex === index ? 'w-[50%]' : 'w-[14.28%]'}`}>
                     <h4
-                        className={`text-sm text-black font-semibold text-center ${course.bgColor} font-[quicksand] cursor-pointer py-4 ${index === 0 ? 'rounded-t-xl' : ''} ${openIndex !== index && index === courses.length - 1 ? 'rounded-b-xl' : ''}`}
+                        className={`text-lg h-full text-black relative font-semibold text-center ${openIndex === index ? 'w-[40%]' : 'w-full'} ${course.bgColor} font-[quicksand] cursor-pointer`}
                         onClick={() => toggleDropdown(index)}
                     >
-                        {course.title}
+                        <p className='absolute text-center -rotate-90 -translate-x-1/2 -translate-y-1/2 w-96 top-1/2 left-1/2'>
+                            {course.title}
+                        </p>
                     </h4>
                     <AnimatePresence>
                         {openIndex === index && (
                             <motion.div
-                                initial={{ height: 0, opacity: 1 }}
-                                animate={{ height: "auto", opacity: 1 }}
-                                exit={{ height: 0, opacity: 1 }}
+                                initial={{ width: 0, opacity: 1 }}
+                                animate={{ width: "100%", opacity: 1 }}
+                                exit={{ width: 0, opacity: 1 }}
                                 transition={{ duration: 0.5, ease: 'easeInOut' }}
-                                className={`text-sm ${course.innerBgColor} font-[quicksand] overflow-hidden ${openIndex == index && index === courses.length - 1 ? 'rounded-b-xl' : ''} `}
+                                className={`text-lg flex flex-col gap-5 ${course.innerBgColor} font-[quicksand] h-full overflow-hidden px-6 py-12`}
                             >
-                                <div className='px-12 py-6 '>
-                                    <p className='text-justify'>
-                                        {course.description}
-                                    </p>
-                                    <p className='flex flex-col my-3'>
-                                        <span><span className='font-bold'>Carga Horária:</span> {course.hours} </span>
-                                        <span><span className='font-bold'>Ministrante:</span> {course.instructor} </span>
-                                    </p>
-                                    <p className='text-base font-bold'>Investimento: {course.investment}</p>
-                                </div>
+                                <p className='text-lg text-justify'>
+                                    {course.description}
+                                </p>
+                                <p className='flex flex-col my-3 text-lg'>
+                                    <span><span className='font-bold'>Carga Horária:</span> {course.hours} </span>
+                                    <span><span className='font-bold'>Ministrante:</span> {course.instructor} </span>
+                                </p>
+                                <p className='text-xl font-bold'>Investimento: {course.investment}</p>
                             </motion.div>
                         )}
                     </AnimatePresence>
@@ -47,4 +47,4 @@ const CoursesCard = () => {
     );
 };
 
-export default CoursesCard;
+export default MobileCoursesCard;

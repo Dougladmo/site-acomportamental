@@ -32,11 +32,11 @@ const PosGraduationCard = () => {
     };
 
     return (
-        <div className='bg-[#F6B0AF] h-56 gap-3 px-5 py-5 rounded-lg flex items-center mt-10 justify-center mx-5 relative '>
+        <div className='bg-[#F6B0AF] h-56 gap-3 px-5 py-5 rounded-lg flex items-center lg:justify-center lg:gap-28 lg:px-12 mt-10 justify-center mx-5 relative lg:w-2/3 lg:mx-auto lg:h-96'>
             <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handlePrevCurso}>
-                <FaArrowLeft size={15} />
+                <FaArrowLeft className='w-3 h-3 md:w-6 md:h-6' />
             </button>
-            <div className='flex flex-col items-center justify-center h-full overflow-hidden pt-7 w-72'>
+            <div className='flex flex-col items-center justify-center h-full overflow-hidden pt-7 w-72 lg:w-full'>
                 <img src="/censupeg.png" alt="logo censupeg" className='absolute top-3 w-18' />
                 <AnimatePresence mode="wait" custom={direction}>
                     <motion.div
@@ -47,17 +47,17 @@ const PosGraduationCard = () => {
                         transition={{ duration: 0.5 }}
                         className='text-center'
                     >
-                        <h3 className='text-sm font-[quicksand] font-bold mb-2'>
+                        <h3 className='text-sm md:text-xl font-[quicksand] font-bold mb-2 lg:mb-8'>
                             {cursosPos[cursoIndex].title}
                         </h3>
-                        <p className='text-xs font-[quicksand] mx-4'>
+                        <p className='text-xs md:text-lg font-[quicksand] mx-4 lg:mx-0'>
                             {cursosPos[cursoIndex].description}
                         </p>
                     </motion.div>
                 </AnimatePresence>
             </div>
             <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handleNextCurso}>
-                <FaArrowRight size={15} />
+                <FaArrowRight className='w-3 h-3 md:w-6 md:h-6' />
             </button>
         </div>
     );
