@@ -34,7 +34,7 @@ const CoursesCard = () => {
                                     </p>
                                     <p className='flex flex-col my-3'>
                                         <span><span className='font-bold'>Carga Horária:</span> {course.hours} </span>
-                                        <span><span className='font-bold'>Ministrante:</span> {course.instructor} </span>
+                                        <span><span className='font-bold'>Certificação:</span> Com certificado válido em todo território nacional. </span>
                                     </p>
                                     <p className='text-base font-bold'>Investimento: {course.investment}</p>
                                 </div>
