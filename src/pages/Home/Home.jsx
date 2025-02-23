@@ -86,7 +86,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <MobileAnimatedAbwsryout />
+          <MobileAnimatedAbout />
         </div>
         <div id="cursos" className='w-full px-1 mb-16 md:px-0 mt-96'>
           <div className='w-full md:hidden'>
