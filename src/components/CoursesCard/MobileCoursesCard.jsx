@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { courses } from './Courses'
 
 const CoursesCard = () => {
-    const [openIndex, setOpenIndex] = useState(null);
+    const [openIndex, setOpenIndex] = useState(1);
 
     const toggleDropdown = (index) => {
         setOpenIndex(openIndex === index ? null : index);
@@ -28,7 +28,7 @@ const CoursesCard = () => {
                                 transition={{ duration: 0.5, ease: 'easeInOut' }}
                                 className={`text-sm ${course.innerBgColor} font-[quicksand] overflow-hidden ${openIndex == index && index === courses.length - 1 ? 'rounded-b-xl' : ''} `}
                             >
-                                <div className='px-12 py-6 '>
+                                <div className='flex flex-col items-center px-12 py-5'>
                                     <p className='text-justify'>
                                         {course.description}
                                     </p>
@@ -37,6 +37,7 @@ const CoursesCard = () => {
                                         <span><span className='font-bold'>Certificação:</span> Com certificado válido em todo território nacional. </span>
                                     </p>
                                     <p className='text-base font-bold'>Investimento: {course.investment}</p>
+                                    <a className={`${course.bgColor} my-4 text-base transition duration-500 font-bold py-4 px-6 rounded-2xl border-2 ${course.borderColor} ${course.hoverTextColor} hover:bg-transparent`} href={`${course.buttonLink}`}>Saiba mais</a>
                                 </div>
                             </motion.div>
                         )}
