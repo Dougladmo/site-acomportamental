@@ -9,7 +9,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
         <>
             <nav
                 id='offcanvas'
-                className={`fixed md:hidden z-50 top-0 right-0 h-screen w-10/12 md:w-1/2 bg-[#BF7269] overflow-auto text-white transform transition-transform duration-300 ease-in-out ${isOffcanvasVisible ? 'translate-x-0' : 'translate-x-full'}`}
+                className={`fixed lg:hidden z-50 top-0 right-0 h-screen w-10/12 md:w-1/2 bg-[#BF7269] overflow-auto text-white transform transition-transform duration-300 ease-in-out ${isOffcanvasVisible ? 'translate-x-0' : 'translate-x-full'}`}
             >
                 <ul className='flex flex-col mt-6 gap-5 pb-10 px-5 items-center font-[quicksand] overflow-auto'>
                     <li className='self-end pr-5'>
@@ -103,7 +103,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
             </nav>
             {isOffcanvasVisible && (
                 <div
-                    className='fixed inset-0 z-20 bg-black/80'
+                    className='fixed inset-0 z-20 bg-black/80 lg:hidden'
                     onClick={toggleOffcanvas}
                 ></div>
             )}

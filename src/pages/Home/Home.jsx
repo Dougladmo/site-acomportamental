@@ -11,17 +11,17 @@ import MobileAnimatedAbout from '../../components/MobileAnimatedAbout';
 export const about = [
   {
     name: 'nicole',
-    text: "Psicóloga e Mestra em Pesquisa e Teoria do Comportamento (UFPA). Especialista em Filosofia da Educação e Terapia de Aceitação e Compromisso (ACT). Atua como docente e supervisora universitária e diretora da ACOMPORTAMENTAL.",
+    text: "Psicóloga e Mestra em Pesquisa e Teoria do Comportamento pela UFPA, com especialização em Filosofia da Educação e Terapia de Aceitação e Compromisso (ACT). Possui ampla experiência na área acadêmica, atuando como docente e supervisora universitária. Além disso, exerce a função de diretora da ACOMPORTAMENTAL, contribuindo para a qualificação de profissionais e o desenvolvimento da Psicologia baseada na ciência comportamental.",
     bgImg: 'bg-[url("/image-nicole.webp")]',
   },
   {
     name: 'fabiane',
-    text: "Psicóloga, Mestra e Doutora em Pesquisa e Teoria do Comportamento (UFPA). Especialista em Terapia de Aceitação e Compromisso (ACT). Atua como docente e supervisora universitária e diretora da ACOMPORTAMENTAL.",
+    text: "Psicóloga, Mestra e Doutora em Pesquisa e Teoria do Comportamento pela UFPA, com especialização em Terapia de Aceitação e Compromisso (ACT). Atua como docente e supervisora universitária, compartilhando seu conhecimento e experiência na formação de novos profissionais. Além disso, desempenha o papel de diretora da ACOMPORTAMENTAL, contribuindo para o avanço da Psicologia e da qualificação profissional na área.",
     bgImg: 'bg-[url("/image-fabiane.webp")]',
   },
   {
     name: 'brand',
-    text: "Desde 2016, em Belém, a ACOMPORTAMENTAL oferece qualificação profissional a estudantes e profissionais da Psicologia e áreas afins. Com base na ciência comportamental, promovemos desenvolvimento pessoal e profissional, proporcionando um espaço acolhedor para aprendizado, crescimento e transformação.",
+    text: "Desde 2016, na cidade de Belém, a ACOMPORTAMENTAL tem se dedicado a oferecer qualificação profissional para estudantes e profissionais da Psicologia e áreas afins. Com um trabalho fundamentado na ciência comportamental, buscamos promover o desenvolvimento pessoal e profissional por meio de cursos e capacitações. Nosso compromisso é proporcionar um ambiente acolhedor e enriquecedor, onde o aprendizado se torna uma experiência transformadora, permitindo o crescimento contínuo e a ampliação de conhecimentos para uma atuação mais qualificada e eficaz.",
   },
 ];
 
@@ -45,10 +45,10 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#f6b0af]/98 to-transparent mt-32"></div>
       </div>
       <Fade duration={1000} triggerOnce>
-        <div id="about-us" className="relative h-64 px-5 pt-12 pb-64 md:pt-24 md:pr-8">
+        <div id="about-us" className="relative px-5 pt-12 md:pt-24 md:pr-8">
           <div className="absolute inset-0 h-full bg-gradient-to-b from-[#f6b0af] to-transparent"></div>
           <div className='hidden mx-auto mt-5 md:flex max-w-7xl'>
-            <div className='flex w-full gap-5 lg:justify-center md:justify-between'>
+            <div className='flex w-full gap-5 md:h-full lg:justify-center md:justify-between'>
               <div className='flex items-center justify-center w-1/2 gap-2 lg:mr-48'>
                 {about
                   .filter((item) => item.name !== 'brand')
@@ -59,8 +59,8 @@ const Home = () => {
                       initial={{ width: "7rem" }}
                       animate={{ width: visibleItem === item.name ? "16rem" : "7rem" }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className={`z-[1] h-48 md:h-80 flex items-center justify-center cursor-pointer rounded-lg relative bg-cover bg-center lg:${item.bgImg} bg-[#BF7269] 
-                            ${visibleItem === item.name ? `items-end ${item.bgImg} md:h-96` : `${item.bgImg} bg-left`}`}
+                      className={`z-[1] h-48 md:h-[400px] flex items-center justify-center cursor-pointer rounded-lg relative bg-cover bg-center lg:${item.bgImg} bg-[#BF7269] 
+                            ${visibleItem === item.name ? `items-end ${item.bgImg} md:h-[500px]` : `${item.bgImg} bg-left`}`}
                     >
                       <p className={`bg-[#BF7269] w-full text-white text-base md:text-2xl rounded-b-lg text-center p-1 font-[quicksand] transition-transform duration-300 flex items-center justify-center 
                             ${visibleItem !== item.name ? "-rotate-90 md:rotate-0 md:self-end md:p-4 md:bg-[#BF7269] tracking-wider h-0 md:text-lg" : ""}`}>
@@ -69,18 +69,18 @@ const Home = () => {
                     </motion.div>
                   ))}
               </div>
-              <div className='z-[1] flex flex-col items-end justify-center w-1/2 gap-3 md:gap-5'>
-                <h2 className='text-xl md:text-3xl font-[quicksand] font-bold text-[#BF7269]'>
+              <div className='z-[1] flex flex-col items-end justify-center w-1/2 md:gap-5'>
+                <h2 className='text-xl md:text-5xl font-[quicksand] font-bold text-[#BF7269]'>
                   Sobre Nós
                 </h2>
                 <Fade duration={1500}>
                   <Slide direction='right'>
-                    <p className='text-xs text-justify md:text-xl'>
+                    <p className='my-8 text-xs text-justify md:text-xl'>
                       {about.find((item) => item.name === visibleItem)?.text}
                     </p>
                   </Slide>
                 </Fade>
-                <a href="https://wa.me/+5591986442158?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Acomportamental%20e%20as%20vagas%20de%20turmas%20disponíveis.%20Pode%20me%20informar%20sobre%20as%20próximas%20turmas%20e%20como%20me%20inscrever?%20😊" target='_blank' className='text-white bg-[#BF7269] hover:bg-transparent border transition duration-300 hover:border-[#BF7269] lg:p-5 hover:text-[#BF7269] rounded-xl p-2 font-[quicksand] font-bold text-[10px] text-center md:self-center md:text-lg'>
+                <a href="https://wa.me/+5591986442158?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Acomportamental%20e%20as%20vagas%20de%20turmas%20disponíveis.%20Pode%20me%20informar%20sobre%20as%20próximas%20turmas%20e%20como%20me%20inscrever?%20😊" target='_blank' className='text-white bg-[#BF7269] hover:bg-transparent border transition duration-300 hover:border-[#BF7269] lg:p-5 hover:text-[#BF7269] rounded-xl p-2 font-[quicksand] font-bold text-[10px] text-center md:text-sm'>
                   Mais de 500 profissionais já foram capacitados conosco!
                 </a>
               </div>
@@ -88,7 +88,7 @@ const Home = () => {
           </div>
           <MobileAnimatedAbout />
         </div>
-        <div id="cursos" className='w-full px-1 mb-16 md:px-0 mt-96'>
+        <div id="cursos" className='w-full px-1 mb-16 md:px-0 mt-36'>
           <div className='w-full md:hidden'>
             <MobileCoursesCard />
           </div>
