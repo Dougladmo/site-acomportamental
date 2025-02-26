@@ -55,9 +55,9 @@ export const courses = [
         borderColor: "border-[#F1B9B0]"
     },
     {
-        description: 'Desenvolva habilidades para apoiar pessoas com deficiência, transtornos mentais e em reabilitação, oferecendo um acompanhamento terapêutico eficaz e sensível.',
-        hours: '40 horas',
-        investment: '',
+        description: 'Descubra os fundamentos da Terapia de Aceitação e Compromisso (ACT) e sua abordagem breve, a FACT, com a Dra. Fabiane Pereira. Neste curso, você aprenderá sobre avaliação, intervenção e encaminhamento em FACT, além dos principais processos psicológicos trabalhados em cada atendimento. Aperfeiçoe suas habilidades clínicas e amplie seu repertório terapêutico com uma abordagem baseada em ciência e eficácia.',
+        hours: '*Curso em produção*',
+        investment: '*Curso em produção*',
         title: "FACT",
         bgColor: "bg-[#F4C6BE]",
         innerBgColor: "bg-[#F4C6BE]/50",
