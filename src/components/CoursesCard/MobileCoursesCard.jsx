@@ -37,7 +37,7 @@ const CoursesCard = () => {
                                         <span><span className='font-bold'>Certificação:</span> Com certificado válido em todo território nacional. </span>
                                     </p>
                                     <p className='text-base font-bold'>Investimento: {course.investment}</p>
-                                    <a className={`${course.bgColor} my-4 text-base transition duration-500 font-bold py-4 px-6 rounded-2xl border-2 ${course.borderColor} ${course.hoverTextColor} hover:bg-transparent`} href={`${course.buttonLink}`}>Saiba mais</a>
+                                    <a target='_blank' className={`${course.bgColor} my-4 text-base transition duration-500 font-bold py-4 px-6 rounded-2xl border-2 ${course.borderColor} ${course.hoverTextColor} hover:bg-transparent`} href={`${course.buttonLink}`}>Saiba mais</a>
                                 </div>
                             </motion.div>
                         )}
