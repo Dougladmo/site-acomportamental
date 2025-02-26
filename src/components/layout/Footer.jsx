@@ -61,24 +61,34 @@ const Footer = () => {
           </p>
         </div>
         <div className='flex flex-col items-center md:items-end justify-center font-[quicksand] lg:w-1/2'>
-         <div className='flex flex-col items-center gap-2'>
-              <p className='self-center mt-1 text-lg'>Onde estamos</p>
-              <iframe className='w-full md:h-64 rounded-xl' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5549453707085!2d-48.48179802503401!3d-1.4419116985445037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c2a176c92a5%3A0xeb35f39b88d68e6d!2sA%20Comportamental%20-%20ci%C3%AAncia%20%26%20comportamento!5e0!3m2!1spt-BR!2sbr!4v1739138062570!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-         </div>
+          <div className='flex flex-col items-center gap-2'>
+            <p className='self-center mt-1 text-lg'>Onde estamos</p>
+            <iframe className='w-full md:h-64 rounded-xl' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5549453707085!2d-48.48179802503401!3d-1.4419116985445037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c2a176c92a5%3A0xeb35f39b88d68e6d!2sA%20Comportamental%20-%20ci%C3%AAncia%20%26%20comportamento!5e0!3m2!1spt-BR!2sbr!4v1739138062570!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
         </div>
       </div>
       <div className='flex gap-3 my-5 md:gap-5'>
-        <FaWhatsapp className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
-        <FaInstagram className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
-        <FaFacebookF className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
-        <CiLinkedin className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
-        <MdEmail className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        <a target='_blank' href="https://wa.me/+5591986442158?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20a%20Acomportamental%20e%20as%20vagas%20de%20turmas%20disponíveis.%20Pode%20me%20informar%20sobre%20as%20próximas%20turmas%20e%20como%20me%20inscrever?%20😊">
+          <FaWhatsapp className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        </a>
+        <a target='_blank' href="https://www.instagram.com/acomportamental/">
+          <FaInstagram className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        </a>
+        <a target='_blank' href="https://www.facebook.com/share/1KQB9n5dyA/?mibextid=wwXIfr">
+          <FaFacebookF className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        </a>
+        <a target='_blank' href="https://www.linkedin.com/company/a-comportamental/">
+          <CiLinkedin className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        </a>
+        <a target='_blank' href="mailto:acomportamental@gmail.com">
+          <MdEmail className='bg-[#BF7269] text-white cursor-pointer p-2 rounded-full hover:bg-transparent hover:border hover:border-[#BF7269] transition duration-300 hover:text-[#BF7269]' size={40} />
+        </a>
       </div>
       <div className='flex flex-col gap-1 font-[quicksand]'>
-        <div className='flex items-center mb-1 text-xs md:text-sm'>
+        {/* <div className='flex items-center mb-1 text-xs md:text-sm'>
           <a href="#" className='pr-2 border-r'>Políticas de privacidade</a>
           <a href="#" className='pl-2'>Termos de uso</a>
-        </div>
+        </div> */}
         <p className='mb-1 text-xs md:text-sm'>
           &copy; 2025 Acomportamental. Todos os direitos reservados.
         </p>
