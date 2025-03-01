@@ -17,6 +17,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mt-3 mb-4'>
                         <Link
+                            href='hero'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='hero'
@@ -29,6 +30,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mb-4'>
                         <Link
+                            href='about-us'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='about-us'
@@ -41,6 +43,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mb-4'>
                         <Link
+                            href='cursos'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='cursos'
@@ -53,6 +56,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mb-4'>
                         <Link
+                            href='pos-graduacao'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='pos-graduacao'
@@ -65,6 +69,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mb-4'>
                         <Link
+                            href='consultas'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='consultas'

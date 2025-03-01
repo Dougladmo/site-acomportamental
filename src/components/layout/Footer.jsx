@@ -62,18 +62,15 @@ const Footer = () => {
         </div>
         <div className='flex flex-col items-center md:items-end justify-center font-[quicksand] lg:w-1/2'>
           <div className='flex flex-col items-center gap-2'>
-            <p className='self-center mt-1 text-lg'>Onde estamos</p>
-            <figure className="w-full md:h-64 rounded-xl">
-              <figcaption className="mb-2 font-bold text-center">Local da A Comportamental</figcaption>
+            <p className='self-center mt-1 text-lg font-bold'>Onde estamos:</p>
               <iframe
                 className="w-full md:h-64 rounded-xl"
+                title="endereço acomportamental"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.5549453707085!2d-48.48179802503401!3d-1.4419116985445037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92a48c2a176c92a5%3A0xeb35f39b88d68e6d!2sA%20Comportamental%20-%20ci%C3%AAncia%20%26%20comportamento!5e0!3m2!1spt-BR!2sbr!4v1739138062570!5m2!1spt-BR!2sbr"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
-            </figure>
-
           </div>
         </div>
       </div>

@@ -36,7 +36,7 @@ const Home = () => {
     <main className='text-3xl bg-[#FFF6F2]'>
       <div
         id="hero"
-        className="relative bg-[url('/foto-hero.jpg')] bg-cover bg-center mt-10 h-64 flex items-center overflow-hidden md:h-[45vh] lg:h-[80vh]"
+        className="relative bg-[url('/foto-hero.webp')] bg-cover bg-center mt-10 h-64 flex items-center overflow-hidden md:h-[45vh] lg:h-[80vh]"
       >
         <Fade duration={1000} className='z-[1] w-full max-w-7xl'>
           <img src="/logo-acomportamental-hero.svg" alt="logo-hero" className='z-[1] w-1/3 ml-8 lg:w-1/2 lg:ml-0 xl:ml-32' />
