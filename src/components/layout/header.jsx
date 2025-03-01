@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className='bg-[#BF7269] w-screen fixed top-0 z-10'>
       <div className='flex items-center justify-between px-8 py-5 mx-auto max-w-7xl'>
-        <Link to='hero' smooth={true} offset={-50}>
+        <Link href='#hero' to='hero' smooth={true} offset={-50}>
           <img src="/logo-header.png" alt="header logo" className='w-12 cursor-pointer' />
         </Link>
         <nav className='hidden lg:flex'>

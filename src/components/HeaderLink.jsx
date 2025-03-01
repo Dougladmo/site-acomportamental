@@ -10,6 +10,7 @@ const HeaderLink = ({ link, title, offset }) => {
             initial="initial"
         >
             <Link
+                href={`${link}`}
                 className='relative text-base cursor-pointer'
                 to={link}
                 smooth={true}

@@ -33,7 +33,7 @@ const PosGraduationCard = () => {
 
     return (
         <div className='bg-[#F6B0AF] sm:w-2/3 sm:mx-auto sm:h-96 h-56 gap-3 px-5 py-5 rounded-lg flex items-center lg:justify-center lg:gap-28 lg:px-12 mt-10 justify-center mx-5 relative lg:w-2/3 lg:mx-auto lg:h-96'>
-            <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handlePrevCurso}>
+            <button aria-label="back button" className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handlePrevCurso}>
                 <FaArrowLeft className='w-3 h-3 md:w-6 md:h-6' />
             </button>
             <div className='flex flex-col items-center justify-center h-full overflow-hidden pt-7 w-72 lg:w-full'>
@@ -56,7 +56,7 @@ const PosGraduationCard = () => {
                     </motion.div>
                 </AnimatePresence>
             </div>
-            <button className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handleNextCurso}>
+            <button aria-label="next button" className='p-1 text-white border-2 border-white rounded-full cursor-pointer hover:bg-white hover:text-[#F6B0AF] duration-300 transition' onClick={handleNextCurso}>
                 <FaArrowRight className='w-3 h-3 md:w-6 md:h-6' />
             </button>
         </div>

@@ -13,14 +13,14 @@ const MobileCoursesCard = () => {
         <div className='flex w-full'>
             {courses.map((course, index) => (
                 <div key={index} className={`flex flex-row h-[650px] justify-center transition-all duration-500 ${openIndex === index ? '' : 'w-[14.28%]'}`}>
-                    <h4
+                    <h2
                         className={`text-lg h-full text-black relative font-semibold text-center ${openIndex === index ? 'w-[40%]' : 'w-full'} ${course.bgColor} font-[quicksand] cursor-pointer`}
                         onClick={() => toggleDropdown(index)}
                     >
                         <p className='absolute text-center -rotate-90 -translate-x-1/2 -translate-y-1/2 w-96 top-1/2 left-1/2'>
                             {course.title}
                         </p>
-                    </h4>
+                    </h2>
                     <AnimatePresence>
                         {openIndex === index && (
                             <motion.div

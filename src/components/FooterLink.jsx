@@ -10,6 +10,7 @@ const FooterLink = ({ link, title, offset }) => {
             initial="initial"
         >
             <Link
+                href={`${link}`}
                 className='relative pr-1 text-base cursor-pointer md:text-lg'
                 to={link}
                 smooth={true}

@@ -13,12 +13,12 @@ const CoursesCard = () => {
         <div>
             {courses.map((course, index) => (
                 <div key={index}>
-                    <h4
+                    <h2
                         className={`text-sm text-black font-semibold text-center ${course.bgColor} font-[quicksand] cursor-pointer py-4 ${index === 0 ? 'rounded-t-xl' : ''} ${openIndex !== index && index === courses.length - 1 ? 'rounded-b-xl' : ''}`}
                         onClick={() => toggleDropdown(index)}
                     >
                         {course.title}
-                    </h4>
+                    </h2>
                     <AnimatePresence>
                         {openIndex === index && (
                             <motion.div
