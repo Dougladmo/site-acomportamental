@@ -82,6 +82,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mb-4'>
                         <Link
+                            href='contact'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='contact'
@@ -94,6 +95,7 @@ const Offcanvas = ({ isOffcanvasVisible, toggleOffcanvas }) => {
                     </li>
                     <li className='mt-8'>
                         <Link
+                            href='hero'
                             onClick={toggleOffcanvas}
                             className='text-lg cursor-pointer'
                             to='hero'
