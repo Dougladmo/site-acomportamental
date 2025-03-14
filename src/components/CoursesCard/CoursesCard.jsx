@@ -12,7 +12,7 @@ const MobileCoursesCard = () => {
     return (
         <div className='flex w-full'>
             {courses.map((course, index) => (
-                <div key={index} className={`flex flex-row h-[650px] justify-center transition-all duration-500 ${openIndex === index ? '' : 'w-[14.28%]'}`}>
+                <div key={index} className={`flex flex-row h-[650px] justify-center transition-all duration-500 ${openIndex === index ? '' : 'w-[16.6666%]'}`}>
                     <h2
                         className={`text-lg h-full text-black relative font-semibold text-center ${openIndex === index ? 'w-[40%]' : 'w-full'} ${course.bgColor} font-[quicksand] cursor-pointer`}
                         onClick={() => toggleDropdown(index)}
