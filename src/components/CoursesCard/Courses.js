@@ -18,7 +18,7 @@ export const courses = [
         bgColor: "bg-[#D18D80]",
         innerBgColor: "bg-[#D18D80]/50",
         buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSdGknV4TnrEGhFpxK3hmMr2m5c1nsVhjFoyiyDPNe9b_OiWrA/viewform",
-        hoverTextColor: "hover:text-[#D18D80]",
+        hoverTextColor: "hover:text-[#BF7269]",
         borderColor: "border-[#D18D80]"
     },
     {
@@ -29,7 +29,7 @@ export const courses = [
         bgColor: "bg-[#D5968F]",
         innerBgColor: "bg-[#D5968F]/50",
         buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSc4x206VbFoWEW_gz9oaGQ5pXajXBiSwd_fceP22rCownL0xw/viewform?pli=1",
-        hoverTextColor: "hover:text-[#D5968F]",
+        hoverTextColor: "hover:text-[#BF7269]",
         borderColor: "border-[#D5968F]"
     },
     {
@@ -40,7 +40,8 @@ export const courses = [
         bgColor: "bg-[#E2A59B]",
         innerBgColor: "bg-[#E2A59B]/50",
         buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSecm0Oqqx9B8Zv17ud7DOhLKsixQf7Dh5pYgvA_ywZJZ3-qEg/viewform",
-        hoverTextColor: "hover:text-[#F1B9B0]",
+        buttonLinkOnline: "https://forms.gle/B3aEEXZ5Rn9NZZ2s7",
+        hoverTextColor: "hover:text-[#BF7269]",
         borderColor: "border-[#F1B9B0]"
     },
     {
@@ -51,7 +52,7 @@ export const courses = [
         bgColor: "bg-[#F1B9B0]",
         innerBgColor: "bg-[#F1B9B0]/50",
         buttonLink: "#",
-        hoverTextColor: "hover:text-[#F4C6BE]",
+        hoverTextColor: "hover:text-[#BF7269]",
         borderColor: "border-[#F4C6BE]"
     },
     {
@@ -62,7 +63,7 @@ export const courses = [
         bgColor: "bg-[#F4C6BE]",
         innerBgColor: "bg-[#F4C6BE]/50",
         buttonLink: "https://docs.google.com/forms/d/e/1FAIpQLSfs5FnUo3e_CEaHmVQXw8GBmFYFFh7PMFyLz701WAFouzGddQ/viewform",
-        hoverTextColor: "hover:text-[#FFD0C7]",
+        hoverTextColor: "hover:text-[#BF7269]",
         borderColor: "border-[#FFD0C7]"
     }
 ];

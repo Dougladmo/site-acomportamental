@@ -38,6 +38,9 @@ const CoursesCard = () => {
                                     </p>
                                     <p className='text-base font-bold'>Investimento: {course.investment}</p>
                                     <a target='_blank' className={`${course.bgColor} my-4 text-base transition duration-500 font-bold py-4 px-6 rounded-2xl border-2 ${course.borderColor} ${course.hoverTextColor} hover:bg-transparent`} href={`${course.buttonLink}`}>Saiba mais</a>
+                                    {course.buttonLinkOnline &&
+                                        <a target='_blank' className={`${course.bgColor} my-4 text-base transition duration-500 font-bold py-4 px-6 rounded-2xl border-2 ${course.borderColor} ${course.hoverTextColor} hover:bg-transparent`} href={`${course.buttonLink}`}>Aprimoramento em clínica online</a>
+                                    }
                                 </div>
                             </motion.div>
                         )}
